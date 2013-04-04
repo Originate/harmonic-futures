@@ -1,0 +1,20 @@
+{
+  "name": "harmonic-futures",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/future.js",
+  "dependencies": {
+    "harmony-reflect": "latest"
+  },
+  "devDependencies": {
+    "mycha": "latest"
+   },
+  "scripts": {
+    "test": "mycha run --harmony"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Originate/harmonic-futures.git"
+  },
+  "author": "Alex David"
+}
