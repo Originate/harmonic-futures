@@ -2,7 +2,7 @@
   "name": "harmonic-futures",
   "version": "0.0.1",
   "description": "",
-  "main": "lib/future.js",
+  "main": "lib/main.js",
   "dependencies": {
     "harmony-reflect": "latest"
   },

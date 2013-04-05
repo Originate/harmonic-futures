@@ -1,0 +1,1 @@
+exports.Future = require 'future'
