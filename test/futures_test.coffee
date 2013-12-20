@@ -43,7 +43,8 @@ describe 'Future class', ->
       it 'passes arguments', (done) ->
         future = new Future (callback) -> callback.callAsync(this, 'error', 'data')
         future.done ->
-          expect(arguments).to.eql ['error', 'data']
+          expect(arguments[0]).to.equal 'error'
+          expect(arguments[1]).to.equal 'data'
           done()
 
 
@@ -59,7 +60,8 @@ describe 'Future class', ->
       it 'passes arguments', (done) ->
         future = new Future (callback) -> callback('error', 'data')
         future.done ->
-          expect(arguments).to.eql ['error', 'data']
+          expect(arguments[0]).to.equal 'error'
+          expect(arguments[1]).to.equal 'data'
           done()
 
 
